@@ -2,7 +2,7 @@
  * Name as used as title for the main page
  * @type {string}
  */
-var title = 'SurVis Literature Collection';
+var title = 'Hallucination in Large Language Models: Detection, Evaluation, and Mitigation';
 
 /**
  * Relative path to the data directory
@@ -38,8 +38,8 @@ var tagCloudOptions = [{
     title: 'Authors',
     minTagFrequency: 1
 }, {
-    field: 'series',
-    title: 'Series',
+    field: 'year',
+    title: 'Year',
     minTagFrequency: 1
 }];
 
@@ -47,15 +47,15 @@ var tagCloudOptions = [{
  * If BibTeX entries (and tags) should be editable
  * @type {boolean}
  */
-var editable = true;
+var editable = false;
 
 /**
  * Subtitle describing the paper the data is referring to (set to null to deactivate)
  * @type {{html: string, id: string}}
  */
 var paper = {
-    html: 'Sample literature collection for <b><a href="http://www.visus.uni-stuttgart.de/uploads/tx_vispublications/eurovis14-star.pdf" target="_blank">SurVis</a></b>',
-    id: 'Beck2016Visual'
+    html: 'A Literature Review on LLM Factual Reliability by <b>MuthuKumaran Nallusamy</b> &mdash; MSc Computer Science, University of Nottingham (2025)',
+    id: 'Ji2023Survey'
 };
 
 /**
@@ -70,8 +70,6 @@ var extraPages = {
  * @type {string}
  */
 var customStyle = '';
-/* Example for simplified entries */
-//var customStyle = 'styles/custom_entries_simplified.css';
 
 /**
  * Options for showing citation information (set to null to avoid showing any citation information)
