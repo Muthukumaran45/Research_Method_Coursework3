@@ -1,0 +1,115 @@
+﻿const generatedBibEntries = {
+    "Guo2022FactChecking": {
+        "abstract": "This survey covers automated fact-checking \u2014 a related problem to hallucination detection \u2014 covering claim detection, evidence retrieval, and claim verification. The authors argue that fact-checking pipelines can be repurposed for hallucination detection in LLMs and provide a comparative review of datasets (e.g., FEVER, MultiFC), models, and evaluation metrics used across the field, identifying which components of the pipeline remain most error-prone.",
+        "author": "Guo, Zhiwei and Schlichtkrull, Michael and Vlachos, Andreas",
+        "doi": "10.1162/tacl_a_00454",
+        "journal": "Transactions of the Association for Computational Linguistics",
+        "keywords": "type:survey, fact_checking, claim_verification, evidence_retrieval, hallucination, NLP",
+        "pages": "178--206",
+        "title": "A Survey on Automated Fact-Checking",
+        "type": "article",
+        "volume": "10",
+        "year": "2022"
+    },
+    "Huang2023Survey": {
+        "abstract": "This survey focuses specifically on hallucination in large language models, covering causes (training data noise, over-parameterisation, decoding strategies), types (closed-domain vs. open-domain hallucination), and proposed solutions. The paper introduces a taxonomy distinguishing between factuality hallucination (departures from real-world facts) and faithfulness hallucination (departures from user instruction or context), reviewing and classifying over one hundred papers and identifying open questions around benchmark construction, multilingual settings, and long-form generation.",
+        "author": "Huang, Lei and Yu, Weijiang and Ma, Weitao and Zhong, Weihong and Feng, Zhangyin and Wang, Haotian and Chen, Qianglong and Peng, Weihua and Feng, Xiaocheng and Qin, Bing and Liu, Ting",
+        "doi": "10.48550/arXiv.2311.05232",
+        "journal": "arXiv preprint",
+        "keywords": "type:survey, hallucination, large_language_models, taxonomy, benchmarks, factuality",
+        "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+        "type": "article",
+        "url": "https://arxiv.org/abs/2311.05232",
+        "year": "2023"
+    },
+    "Ji2023Survey": {
+        "abstract": "Large language models have demonstrated remarkable capabilities but suffer from hallucination \u2014 the generation of fluent but factually incorrect or unsupported content. This comprehensive survey covers hallucination in natural language generation tasks including abstractive summarisation, dialogue systems, machine translation, and open-domain question answering. The authors define hallucination and propose a two-part taxonomy: intrinsic hallucination (contradicting the source) and extrinsic hallucination (content neither supported nor contradicted by the source), providing a unifying framework for future research.",
+        "author": "Ji, Ziwei and Lee, Nayeon and Frieske, Rita and Yu, Tiezheng and Su, Dan and Xu, Yan and Ishii, Etsuko and Bang, Yejin and Madotto, Andrea and Fung, Pascale",
+        "doi": "10.1145/3571730",
+        "journal": "ACM Computing Surveys",
+        "keywords": "type:survey, hallucination, natural_language_generation, taxonomy, evaluation, mitigation",
+        "number": "12",
+        "pages": "1--38",
+        "title": "Survey of Hallucination in Natural Language Generation",
+        "type": "article",
+        "volume": "55",
+        "year": "2023"
+    },
+    "Manakul2023SelfCheckGPT": {
+        "abstract": "SelfCheckGPT is a zero-resource black-box method for detecting hallucination in generative LLMs. The core insight is that if a model is uncertain about a fact, repeated samples will be inconsistent with one another, whereas confidently known facts will be reproduced consistently. The method requires no external knowledge base, no access to model internals, and no labelled data, making it applicable to closed APIs. Evaluated on the WikiBio dataset, consistency-based scoring significantly outperforms BERTScore and other reference-free metrics in detecting non-factual sentences.",
+        "author": "Manakul, Potsawee and Liusie, Adian and Gales, Mark J. F.",
+        "doi": "10.48550/arXiv.2303.08896",
+        "journal": "arXiv preprint",
+        "keywords": "type:detection, hallucination, self_consistency, black_box, zero_resource, LLM",
+        "title": "{SelfCheckGPT}: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models",
+        "type": "article",
+        "url": "https://arxiv.org/abs/2303.08896",
+        "year": "2023"
+    },
+    "Maynez2020Faithfulness": {
+        "abstract": "This paper investigates faithfulness and factuality in abstractive summarisation, distinguishing between extrinsic and intrinsic hallucinations in model-generated summaries. A large-scale human annotation study on summaries produced by state-of-the-art models on the XSum dataset finds that the majority of errors are extrinsic. Evaluation of automatic metrics (ROUGE, BERTScore, QAGS) reveals poor correlation with human faithfulness judgements, highlighting an important evaluation gap in the field.",
+        "author": "Maynez, Joshua and Narayan, Shashi and Bohnet, Bernd and McDonald, Ryan",
+        "booktitle": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+        "doi": "10.18653/v1/2020.acl-main.173",
+        "keywords": "type:mitigation, faithfulness, abstractive_summarisation, hallucination, evaluation, XSum",
+        "pages": "1906--1919",
+        "title": "On Faithfulness and Factuality in Abstractive Summarization",
+        "type": "inproceedings",
+        "year": "2020"
+    },
+    "Min2023FActScore": {
+        "abstract": "FActScore (Factual Precision Score) is a fine-grained evaluation framework for assessing factual precision in long-form text generation. It decomposes generated passages into atomic claims \u2014 minimal self-contained factual statements \u2014 and verifies each claim against Wikipedia using a retrieval-augmented NLI model. Applied to biography generation by GPT-4, ChatGPT, and smaller LLMs, it reveals substantial hallucination rates even in the best models. Validation via human annotation studies shows high correlation between human factuality judgements and automated FActScore.",
+        "author": "Min, Sewon and Krishna, Kalpesh and Lyu, Xinxi and Lewis, Mike and Yih, Wen-tau and Koh, Pang Wei and Iyyer, Mohit and Zettlemoyer, Luke and Hajishirzi, Hannaneh",
+        "booktitle": "Proceedings of EMNLP 2023",
+        "doi": "10.18653/v1/2023.emnlp-main.741",
+        "keywords": "type:evaluation, factual_precision, atomic_claims, hallucination, long_form_generation, NLI",
+        "pages": "12076--12100",
+        "title": "{FActScoring}: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation",
+        "type": "inproceedings",
+        "year": "2023"
+    },
+    "Mundler2024SelfContradictory": {
+        "abstract": "This paper addresses self-contradiction in LLMs, where a model makes logically inconsistent claims within a single output or across a conversation. The authors construct a benchmark of self-contradictory statements elicited from GPT-3.5 and GPT-4 and evaluate three detection strategies: prompting the model to self-evaluate, using an external NLI classifier, and a hybrid approach. LLMs are found to be prone to self-contradiction especially on contested or ambiguous topics, with the hybrid NLI-plus-prompting detector achieving the best F1 score.",
+        "author": "M{\\\"u}ndler, Niels and He, Jingxuan and Jenko, Slobodan and Vechev, Martin",
+        "doi": "10.48550/arXiv.2305.15852",
+        "journal": "arXiv preprint",
+        "keywords": "type:detection, self_contradiction, hallucination, NLI, benchmark, GPT",
+        "title": "Self-Contradictory Hallucinations of Large Language Models: Evaluation, Detection and Mitigation",
+        "type": "article",
+        "url": "https://arxiv.org/abs/2305.15852",
+        "year": "2024"
+    },
+    "Rawte2023Survey": {
+        "abstract": "This survey extends hallucination research to large foundation models trained at scale on broad corpora. The authors argue that hallucination in this context is qualitatively different from earlier NLG systems due to emergent capabilities and chain-of-thought reasoning, which can propagate errors through multiple inference steps. They introduce a hierarchical taxonomy of hallucination types (factual, logical, contextual) and survey mitigation strategies including RLHF-based alignment, retrieval augmentation, and output verification.",
+        "author": "Rawte, Vipula and Sheth, Amit and Das, Amitava",
+        "doi": "10.48550/arXiv.2309.05922",
+        "journal": "arXiv preprint",
+        "keywords": "type:survey, hallucination, foundation_models, taxonomy, mitigation, RLHF",
+        "title": "A Survey of Hallucination in Large Foundation Models",
+        "type": "article",
+        "url": "https://arxiv.org/abs/2309.05922",
+        "year": "2023"
+    },
+    "Shuster2021Retrieval": {
+        "abstract": "This paper demonstrates that retrieval-augmented generation (RAG) substantially reduces hallucination in open-domain dialogue systems. The authors augment a seq2seq dialogue model with a retrieval component that fetches relevant Wikipedia passages at inference time, grounding responses in retrieved evidence. Evaluated on the Wizard of Wikipedia and CMU Document Grounding datasets using human annotators rating faithfulness, retrieval augmentation reduces hallucination rates by a substantial margin without degrading dialogue coherence, establishing RAG as a key mitigation strategy.",
+        "author": "Shuster, Kurt and Poff, Spencer and Chen, Moya and Kiela, Douwe and Weston, Jason",
+        "booktitle": "Findings of the Association for Computational Linguistics: EMNLP 2021",
+        "doi": "10.18653/v1/2021.findings-emnlp.320",
+        "keywords": "type:mitigation, retrieval_augmented_generation, hallucination, dialogue, faithfulness, grounding",
+        "pages": "3784--3803",
+        "title": "Retrieval Augmentation Reduces Hallucination in Conversation",
+        "type": "inproceedings",
+        "year": "2021"
+    },
+    "Zhang2023Sirens": {
+        "abstract": "This paper describes hallucination in LLMs as a siren's song \u2014 seductive but dangerous. The survey emphasises how the fluency of hallucinated content makes it difficult for users and downstream systems to detect errors. The authors classify hallucination by modality (text, code, vision-language) and by trigger (factual queries, knowledge-intensive tasks, creative generation) and survey detection and mitigation strategies accordingly, noting progress and persistent gaps via a comparative survey of published benchmarks, datasets, and mitigation methods.",
+        "author": "Zhang, Yue and Li, Yafu and Cui, Leyang and Cai, Deng and Liu, Lemao and Fu, Tingchen and Huang, Xinting and Zhao, Enbo and Zhang, Yu and Chen, Yulong and Wang, Longyue and Luu, Anh Tuan and Bi, Wei and Shi, Freda and Shi, Shuming",
+        "doi": "10.48550/arXiv.2309.01219",
+        "journal": "arXiv preprint",
+        "keywords": "type:survey, hallucination, large_language_models, detection, mitigation, multimodal",
+        "title": "Siren's Song in the {AI} Ocean: A Survey on Hallucination in Large Language Models",
+        "type": "article",
+        "url": "https://arxiv.org/abs/2309.01219",
+        "year": "2023"
+    }
+};
