@@ -38,8 +38,8 @@ var tagCloudOptions = [{
     title: 'Authors',
     minTagFrequency: 1
 }, {
-    field: 'year',
-    title: 'Year',
+    field: 'series',
+    title: 'Series',
     minTagFrequency: 1
 }];
 
@@ -54,12 +54,12 @@ var editable = false;
  * @type {{html: string, id: string}}
  */
 var paper = {
-    html: 'A Literature Review on LLM Factual Reliability by <b>MuthuKumaran Nallusamy</b> &mdash; MSc Computer Science, University of Nottingham (2025)',
+    html: 'Coursework 3 literature collection: 10 papers on hallucination in large language models — detection, evaluation, and mitigation',
     id: 'Ji2023Survey'
 };
 
 /**
- * Extra pages like an about page that will be listed in the footer an can be opened on demand (page name -> path)
+ * Extra pages like an about page that will be listed in the footer and can be opened on demand (page name -> path)
  */
 var extraPages = {
     'about': 'about.html'
